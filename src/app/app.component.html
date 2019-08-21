@@ -1,0 +1,39 @@
+
+<nav class="navbar navbar-expand-lg navbar-light border-bottom" id="navbar">
+  <div class="collapse navbar-collapse">
+    <h2 style="color: white">POS System</h2>
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: white">Search</button>
+        </form>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+<div class="d-flex" id="wrapper">
+
+  <div class="bg-dark border-right" id="sidebar-wrapper" style="width: 15%; height: 593px;position: fixed;top: 60px">
+    <div class="list-group list-group-flush" id="sidebartwo">
+      <img src="../assets/images/PicsArt_03-07-01.33.01.png" id="proimage">
+      <a routerLink="/dashoard" href="#" class="list-group-item list-group-item-action bg-dark" style="color: white">Dashboard</a>
+      <a routerLink="/customer" href="#" class="list-group-item list-group-item-action bg-dark" style="color: white">Customer</a>
+      <a routerLink="/item" href="#" class="list-group-item list-group-item-action bg-dark" style="color: white">Item</a>
+      <a href="not-found" class="list-group-item list-group-item-action bg-dark" style="color: white">Place Order</a>
+      <a href="not-found" class="list-group-item list-group-item-action bg-dark" style="color: white">Reports</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="content">
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+
+</div>
+
+

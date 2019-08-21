@@ -1,0 +1,20 @@
+#customertable{
+  width: 900px;
+  margin-top: 10px;
+}
+#cusomerhead{
+  margin-top: 5px;
+}
+#special{
+  position: relative;
+  top: 0;
+  left: 110px;
+}
+.btncust{
+  margin-right: 10px;
+}
+#custbody{
+  position: relative;
+  top: 70px;
+  left: 200px;
+}

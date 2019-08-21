@@ -1,0 +1,36 @@
+#dashcard{
+  position: relative;
+  top: 70px;
+  left: 210px;
+}
+#dashcard_1{
+  height: 200px;
+  width: 200px;
+}
+#dashcard_2{
+  height: 200px;
+  width: 200px;
+}
+#dashcard_3{
+  height: 200px;
+  width: 200px;
+}
+#dashcard_4{
+  height: 200px;
+  width: 200px;
+}
+#dashcard_5{
+  height: 200px;
+  width: 200px;
+}
+#dashgif_1{
+  position: relative;
+  width: 1120px;
+  height: 300px;
+}
+#dashgifdiv{
+  position: relative;
+  left: 210px;
+  top: 100px;
+  background-color: #94b8b8;
+}

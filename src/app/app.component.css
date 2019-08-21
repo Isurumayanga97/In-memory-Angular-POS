@@ -1,0 +1,22 @@
+#navbar{
+  background-color:#595959;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+#sidebar-wrapper{
+  background-color:#595959!important;
+}
+#sidebartwo{
+  position: relative;
+}
+#proimage{
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  border: 2px solid white;
+  position: relative;
+  left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

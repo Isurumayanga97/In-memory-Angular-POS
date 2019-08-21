@@ -1,0 +1,65 @@
+<body id="item_body">
+<div class="row" style="width: 1165px">
+  <div class="col-md-12" id="itemnav_2">
+    <div class="alert alert-dark" role="alert" id="cusomerhead">
+      <h5><a href="#">Dashboard</a>/Item Form</h5>
+    </div>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Item Code</label>
+          <input type="text" class="form-control" id="inputEmail4" placeholder="Item code" #icode>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Item Name</label>
+          <input type="text" class="form-control" id="inputPassword4" placeholder="Item name" #iname>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Brand</label>
+          <input type="text" class="form-control" id="inputEmail42" placeholder="Brand" #ibrand>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Quantity</label>
+          <input type="text" class="form-control" id="inputPassword24" placeholder="Quantity" #iqty>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Price</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Price" #iprice>
+      </div>
+
+      <button type="button" class="btn btn-primary" (click)="addItem(icode.value,iname.value,ibrand.value,iqty.value,iprice.value)">ADD</button>
+    </form>
+    <table class="table table-striped" id="item_table">
+      <thead>
+      <tr style="background-color: #669999">
+        <th scope="col">Item Code</th>
+        <th scope="col">Item Name</th>
+        <th scope="col">Brand</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Price</th>
+        <th scope="col">Remove</th>
+        <th scope="col">Update</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of items">
+        <td style="text-align: center;">{{item.code}}</td>
+        <td style="text-align: center;">{{item.name}}</td>
+        <td style="text-align: center;">{{item.brand}}</td>
+        <td style="text-align: center;">{{item.qty}}</td>
+        <td style="text-align: center;">{{item.price}}</td>
+        <td>
+          <button class="btn btn-danger" (click)="removeItem(item)">Remove</button>
+        </td>
+        <td>
+          <button class="btn btn-outline-success">Update</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+<script src="../../assets/js/jquery-3.4.1.min.js"></script>
+</body>
